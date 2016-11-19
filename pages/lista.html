@@ -1,0 +1,17 @@
+<div ng-controller="productListController">
+  <div class="container">
+    <h3>Escolha os produtos</h3>
+    <search-result ng-repeat="product in productList | orderBy:'name'" product-object="product" remove-product="removeProduct()" add-product="addProduct()" total-sum="totalSum()">
+    </search-result>
+  </div>
+  <div class="total-row">
+    <div class="container">
+      <div style="width: 100%;">
+        <div class="pull-right">
+          <span>Total:</span><span class="total-amount">{{totalSum() | currency:'R$'}}</span>
+          <a class="btn btn-default" href="#dados" ng-show="totalSum(productList) > 0">Ir para o caixa</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

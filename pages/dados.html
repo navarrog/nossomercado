@@ -1,0 +1,34 @@
+<div class="container">
+  <h2>Insira seus dados para prosseguir</h2>
+  <p>
+    Antes de concluir seu pedido, precisamos confirmar que você reside no condomínio Araucária.
+  </p>
+  <br>
+  <div class="col-xs-12 col-md-5">
+    <form class="form-dados" action="#carrinho" method="post">
+      <div class="row">
+        <label>Nome completo:</label>
+        <input type="text" name="name" class="form-control" ng-model="userInfo.name" required>
+      </div>
+      <br><br>
+      <div class="row">
+        <label>Telefone (será usado para confirmar seu pedido):</label>
+        <input type="tel" name="tel" class="form-control" ng-model="userInfo.phone" required>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" ng-model="userInfo.whatsApp"> Aceito receber informações sobre o pedido via WhatsApp
+          </label>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <label>Número do apartamento:</label>
+        <input type="text" class="form-control" ng-model="userInfo.aptNum" required>
+      </div>
+      <br><br>
+      <div class="row">
+        <button type="submit" class="btn btn-primary" ng-click="saveInfo()">Confirmar dados</button>
+      </div>
+    </form>
+  </div>
+</div>

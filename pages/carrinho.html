@@ -1,0 +1,75 @@
+<div class="container" ng-show="totalSum(productList) == 0">
+  <div class="container">
+    <p>
+      Nenhum produto no seu carrinho.
+    </p>
+    <a class="btn btn-primary" href="#lista">Criar lista</a>
+  </div>
+</div>
+<div class="container" ng-show="totalSum(productList) > 0">
+  <h3>Revise seu pedido</h3>
+  <p>
+    Previsão de entrega: {{deliveryDate | date:'dd/MM/yyyy'}}
+  </p>
+  <br>
+  <form action="https://formspree.io/gustavo_nav@hotmail.com" method="POST">
+    <div class="info-cart">
+      <b>Nome:</b> {{userInfo.name}} <br>
+      <b>Telefone:</b> {{userInfo.phone}} <br>
+      <b>Atualização sobre o pedido via WhatsApp:</b> <span ng-show="userInfo.whatsApp">Sim</span><span ng-show="!userInfo.whatsApp">Não</span><br>
+      <b>Número do apartamento:</b> {{userInfo.aptNum}} <br>
+      <a href="#dados">Editar dados</a>
+      <input type="hidden" name="name" value="{{userInfo.name}}">
+      <input type="hidden" name="phone" value="{{userInfo.phone}}">
+      <input type="hidden" name="whatsapp" value="{{userInfo.whatsApp}}">
+      <input type="hidden" name="apt" value="{{userInfo.aptNum}}">
+    </div>
+    <div class="col-xs-12 col-md-8">
+      <table class="table" ng-show="productList">
+        <tr>
+          <th>
+            Produto
+          </th>
+          <th>
+            Quantidade
+          </th>
+          <th>
+            Preço
+          </th>
+          <th>
+            Total
+          </th>
+        </tr>
+        <tr ng-repeat="item in productList | orderBy:'name'" ng-show="item.buying > 0">
+          <td>
+            {{item.name}}
+          </td>
+          <td>
+            {{item.buying}}
+          </td>
+          <td>
+            {{item.price | currency:'R$'}}
+          </td>
+          <td>
+            {{(item.price) * (item.buying) | currency:'R$'}}
+          </td>
+          <input type="hidden" name="order" ng-if="item.buying > 0" value="{{item.buying}}x - {{item.name}}">
+        </tr>
+        <tr>
+          <td>
+          </td>
+          <td>
+          </td>
+          <td class="total-cart">
+            TOTAL:
+          </td>
+          <td class="total-cart">
+            <input type="text" class="input-table" name="order-total" value="{{totalSum() | currency:'R$'}}" readonly="">
+          </td>
+        </tr>
+      </table>
+      <div class="alert alert-warning" role="alert"><b>Atenção:</b> o pagamento deverá ser efetuado no ato da entrega. Pagamentos somente em dinheiro.</div>
+      <input type="submit" class="btn btn-primary" ng-click="submitOrder()" value="Confirmar pedido">
+    </div>
+  </form>
+</div>

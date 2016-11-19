@@ -1,0 +1,324 @@
+[
+  {
+    "name": "Arroz Rosalito",
+    "description": "Tipo 1 - 5kg",
+    "price": 12.90,
+    "image": "/img/produtos/ArrozRosalito.png",
+    "buying": 0
+  },
+  {
+    "name": "Arroz Namorado",
+    "description": "Tipo 1 - 5kg",
+    "price": 13.50,
+    "image": "/img/produtos/ArrozNamorado.jpg",
+    "buying": 0
+  },
+  {
+    "name": "Biscoito Recheado Recheados",
+    "description": "125g",
+    "price": 0.98,
+    "image": "/img/produtos/BiscoitoRecheados.png",
+    "buying": 0
+  },
+  {
+    "name": "Biscoito Recheado Danix",
+    "description": "125g",
+    "price": 1.49,
+    "image": "/img/produtos/BiscoitoDanix.png",
+    "buying": 0
+  },
+  {
+    "name": "Café Torrado e Moído Café Brasileiro",
+    "description": "1kg",
+    "price": 7.78,
+    "image": "/img/produtos/CafeBrasileiro.png",
+    "buying": 0
+  },
+  {
+    "name": "Café Torrado e Moído Caboclo",
+    "description": "1kg",
+    "price": 7.98,
+    "image": "/img/produtos/CafeCaboclo.png",
+    "buying": 0
+  },
+  {
+    "name": "Farinha de Trigo Sol",
+    "description": "1kg",
+    "price": 2.50,
+    "image": "/img/produtos/FarinhadeTrigoSol.png",
+    "buying": 0
+  },
+  {
+    "name": "Farinha de Trigo Boa Sorte",
+    "description": "1kg",
+    "price": 2.00,
+    "image": "/img/produtos/FarinhadeTrigoBoaSorte.png",
+    "buying": 0
+  },
+  {
+    "name": "Óleo de Soja Concordia",
+    "description": "900ml",
+    "price": 2.90,
+    "image": "/img/produtos/OleodeSojaConcordia.jpg",
+    "buying": 0
+  },
+  {
+    "name": "Óleo de Soja Soya",
+    "description": "900ml",
+    "price": 2.85,
+    "image": "/img/produtos/OleodeSojaSoya.jpg",
+    "buying": 0
+  },
+  {
+    "name": "Sardinha Coqueiro",
+    "description": "125g",
+    "price": 2.69,
+    "image": "/img/produtos/SardinhaNoOleoCoqueiro.jpg",
+    "buying": 0
+  },
+  {
+    "name": "Sardinha Pescador",
+    "description": "125g",
+    "price": 2.25,
+    "image": "/img/produtos/SardinhaNoOleoPescador.jpg",
+    "buying": 0
+  },
+  {
+    "name": "Farofa Tradicional Yoki",
+    "description": "250g",
+    "price": 3.85,
+    "image": "/img/produtos/FarofaTradicionalYoki.jpg",
+    "buying": 0
+  },
+  {
+    "name": "Sal Refinado Lebre",
+    "description": "1kg",
+    "price": 0.89,
+    "image": "/img/produtos/SalRefinadoLebre.jpg",
+    "buying": 0
+  },
+  {
+    "name": "Sal Refinado Cisne",
+    "description": "1kg",
+    "price": 1.85,
+    "image": "/img/produtos/SalRefinadoCisne.jpg",
+    "buying": 0
+  },
+  {
+    "name": "Molho de Tomate Fugini",
+    "description": "340g",
+    "price": 1.29,
+    "image": "/img/produtos/MolhodeTomateFugini.jpg",
+    "buying": 0
+  },
+  {
+    "name": "Molho de Tomate Salsaretti",
+    "description": "340g",
+    "price": 1.59,
+    "image": "/img/produtos/MolhodeTomateSalsaretti.jpg",
+    "buying": 0
+  },
+  {
+    "name": "Achocolatado em Pó Nescau",
+    "description": "400g",
+    "price": 5.89,
+    "image": "/img/produtos/AchocolatadoNescau.jpg",
+    "buying": 0
+  },
+  {
+    "name": "Achocolatado em Pó Toddy",
+    "description": "400g",
+    "price": 6.09,
+    "image": "/img/produtos/AchocolatadoToddy.jpg",
+    "buying": 0
+  },
+  {
+    "name": "Leite em Pó Italac",
+    "description": "200g",
+    "price": 7.89,
+    "image": "/img/produtos/LeiteItalac200gr.png",
+    "buying": 0
+  },
+  {
+    "name": "Leite em Pó Nutril ",
+    "description": "200g",
+    "price": 7.99,
+    "image": "/img/produtos/LeiteNutril200gr.jpg",
+    "buying": 0
+  },
+  {
+    "name": "Açúcar Refinado Guarani",
+    "description": "1kg",
+    "price": 2.39,
+    "image": "/img/produtos/AcucarRefinadoGuarani.jpg",
+    "buying": 0
+  },
+  {
+    "name": "Açúcar Refinado Caravelas",
+    "description": "1kg",
+    "price": 2.55,
+    "image": "/img/produtos/AcucarRefinadoCaravelas.jpg",
+    "buying": 0
+  },
+  {
+    "name": "Feijão Carioca Camil",
+    "description": "Tipo 1 - 1kg",
+    "price": 8.20,
+    "image": "/img/produtos/FeijaoCariocaCamil.jpg",
+    "buying": 0
+  },
+  {
+    "name": "Feijão Carioca Rosalito",
+    "description": "Tipo 1 - 1kg",
+    "price": 8.90,
+    "image": "/img/produtos/FeijaoCariocaRosalito.jpg",
+    "buying": 0
+  },
+  {
+    "name": "Macarrão com Ovos Espaguete Adria",
+    "description": "500g",
+    "price": 1.99,
+    "image": "/img/produtos/EspagueteAdria.jpg",
+    "buying": 0
+  },
+  {
+    "name": "Macarrão com Ovos Espaguete Petybon",
+    "description": "500g",
+    "price": 1.79,
+    "image": "/img/produtos/EspaguetePetybon.png",
+    "buying": 0
+  },
+  {
+    "name": "Macarrão com Ovos Parafuso Adria",
+    "description": "500g",
+    "price": 1.99,
+    "image": "/img/produtos/ParafusoAdria.jpg",
+    "buying": 0
+  },
+  {
+    "name": "Macarrão com Ovos Parafuso Petybon",
+    "description": "500g",
+    "price": 1.79,
+    "image": "/img/produtos/ParafusoPetybon.png",
+    "buying": 0
+  },
+  {
+    "name": "Goiabada Predilecta",
+    "description": "300g",
+    "price": 1.69,
+    "image": "/img/produtos/GoiabadaPredilecta300gr.jpg",
+    "buying": 0
+  },
+  {
+    "name": "Goiabada Xavante",
+    "description": "300g",
+    "price": 1.40,
+    "image": "/img/produtos/GoiabadaXavante300gr.jpg",
+    "buying": 0
+  },
+  {
+    "name": "Feijão Preto Camil",
+    "description": "1kg",
+    "price": 6.90,
+    "image": "/img/produtos/FeijaoPretoCamil.jpg",
+    "buying": 0
+  },
+  {
+    "name": "Feijão Preto Kicaldo",
+    "description": "1kg",
+    "price": 6.49,
+    "image": "/img/produtos/FeijaoPretoKicaldo.png",
+    "buying": 0
+  },
+  {
+    "name": "Fubá Mimoso Yoki",
+    "description": "500g",
+    "price": 1.45,
+    "image": "/img/produtos/FubaMimosoYoki.jpg",
+    "buying": 0
+  },
+  {
+    "name": "Fubá Mimoso Xodó",
+    "description": "500g",
+    "price": 0.98,
+    "image": "/img/produtos/FubaMimosoXodomilho.jpg",
+    "buying": 0
+  },
+  {
+    "name": "Biscoito Salgado Triunfo",
+    "description": "200g",
+    "price": 1.69,
+    "image": "/img/produtos/BiscoitoAguaeSalTriunfo.jpg",
+    "buying": 0
+  },
+  {
+    "name": "Biscoito Salgado Adria",
+    "description": "200g",
+    "price": 1.30,
+    "image": "/img/produtos/BiscoitoAguaeSalAdria.jpg",
+    "buying": 0
+  },
+  {
+    "name": "Leite Longa Vida Líder",
+    "description": "1L",
+    "price": 2.19,
+    "image": "/img/produtos/LeiteLongaVidaLider.jpg",
+    "buying": 0
+  },
+  {
+    "name": "Leite Longa Vida Piracanjuba",
+    "description": "1L",
+    "price": 2.39,
+    "image": "/img/produtos/LeiteLongaVidaPiracanjuba.jpg",
+    "buying": 0
+  },
+  {
+    "name": "Macarrão Instantâneo Nissin",
+    "description": "80g",
+    "price": 1.15,
+    "image": "/img/produtos/MiojoNissin.png",
+    "buying": 0
+  },
+  {
+    "name": "Macarrão Instantâneo Vigor",
+    "description": "80g",
+    "price": 0.73,
+    "image": "/img/produtos/MiojoVigor.jpg",
+    "buying": 0
+  },
+  {
+    "name": "Suco em Pó MID",
+    "description": "25g",
+    "price": 0.85,
+    "image": "/img/produtos/SucoPoMid.jpg",
+    "buying": 0
+  },
+  {
+    "name": "Suco em Pó Tang",
+    "description": "25g",
+    "price": 0.94,
+    "image": "/img/produtos/SucoPoTang.jpg",
+    "buying": 0
+  },
+  {
+    "name": "Refrigerante Poty",
+    "description": "2L",
+    "price": 3.49,
+    "image": "/img/produtos/RefrigerantePoty.png",
+    "buying": 0
+  },
+  {
+    "name": "Refrigerante Roller",
+    "description": "2L",
+    "price": 3.69,
+    "image": "/img/produtos/RefrigeranteRoller.png",
+    "buying": 0
+  },
+  {
+    "name": "Refrigerante Coca-Cola",
+    "description": "2L",
+    "price": 5.49,
+    "image": "/img/produtos/RefrigeranteCocaCola.png",
+    "buying": 0
+  }
+]

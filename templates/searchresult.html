@@ -1,0 +1,22 @@
+<div class="col-md-3 col-sm-6">
+  <div class="box-product">
+    <img src="{{productObject.image}}" style="display:block; margin: auto" width="150" height="150" alt="" />
+    <div class="text-center product-name">
+      {{productObject.name}}
+    </div>
+    <div class="text-center product-description">
+      {{productObject.description}}
+    </div>
+    <div class="text-center product-price">
+      {{productObject.price | currency:'R$'}}
+    </div>
+    <hr>
+    <div class="shop-products">
+      <button class="btn btn-default" type="button" name="button" ng-disabled="productObject.buying == 0" ng-click="removeProduct()"> - </button>
+      <div>
+        <input class="form-control" type="text" name="name" ng-model="productObject.buying" ng-change="totalSum()">
+      </div>
+      <button class="btn btn-primary" type="button" name="button" ng-click="addProduct()"> + </button>
+    </div>
+  </div>
+</div>
