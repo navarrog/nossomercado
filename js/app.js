@@ -128,7 +128,7 @@ function($scope, $http, $routeParams, $location, $rootScope) {
 
 nossoMercado.directive('searchResult', function() {
     return {
-      templateUrl: 'https://tusgavo.github.io/nossomercado/templates/searchresult.html',
+      templateUrl: '/nossomercado/templates/searchresult.html',
       replace: true,
       scope: {
         productObject: "=",
