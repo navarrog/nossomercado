@@ -17,14 +17,14 @@
     "name": "Biscoito Recheado Recheados",
     "description": "125g",
     "price": 0.98,
-    "image": "/nossomercado/img/produtos/BiscoitoRecheados.jpg",
+    "image": "/nossomercado/img/produtos/BiscoitoRecheados.png",
     "buying": 0
   },
   {
     "name": "Biscoito Recheado Danix",
     "description": "125g",
     "price": 1.49,
-    "image": "/nossomercado/img/produtos/BiscoitoDanix.png",
+    "image": "/nossomercado/img/produtos/BiscoitoDanix.jpg",
     "buying": 0
   },
   {

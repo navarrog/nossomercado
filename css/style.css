@@ -70,3 +70,7 @@ html, body {
 
 .input-table {
   border: none; }
+
+.jumbotron p {
+  font-size: 14px;
+}
