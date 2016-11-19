@@ -47,6 +47,7 @@ function($scope, $http, $routeParams, $location, $rootScope) {
       'aptNum': $scope.userInfo.aptNum
     }
     localStorage.setItem('userInfo', angular.toJson(userInfo));
+    $location.path("/carrinho");
   };
 
   $scope.$watch('saveInfo', function() {
