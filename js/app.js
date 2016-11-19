@@ -31,7 +31,7 @@ nossoMercado.config(function ($routeProvider) {
 nossoMercado.controller('productListController', ['$scope', '$http', '$routeParams', '$location', '$rootScope',
 function($scope, $http, $routeParams, $location, $rootScope) {
 
-  $http.get('http://nossomercado.esy.es/json')
+  $http.get('https://tusgavo.github.io/nossomercado/json')
       .success(function (result) {
         $scope.products = result;
       })
