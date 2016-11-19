@@ -31,30 +31,22 @@ nossoMercado.config(function ($routeProvider) {
 nossoMercado.controller('productListController', ['$scope', '$http', '$routeParams', '$location', '$rootScope',
 function($scope, $http, $routeParams, $location, $rootScope) {
 
-  $http.get('json')
-      .success(function (result) {
-        $scope.products = result;
-      })
-      .error(function (data, status) {
-        console.log(data);
-      })
-
-  // $scope.products = [
-  //   {
-  //     "name": "Arroz Yoki",
-  //     "description": "Tipo 1 - 5kg",
-  //     "price": 12.90,
-  //     "image": "http://mercadoemcasa.loja2.com.br/img/f3492826798f2d13e43662691f3b877e.jpg",
-  //     "buying": 0
-  //   },
-  //   {
-  //     "name": "Arroz Namorado",
-  //     "description": "Tipo 1 - 5kg",
-  //     "price": 13.50,
-  //     "image": "http://d2fvaoynuecth8.cloudfront.net/assets/39518/produtos/134309/desodorantes-axesecopulse.jpg",
-  //     "buying": 0
-  //   }
-  // ];
+  $scope.products = [
+    {
+      "name": "Arroz Yoki",
+      "description": "Tipo 1 - 5kg",
+      "price": 12.90,
+      "image": "http://mercadoemcasa.loja2.com.br/img/f3492826798f2d13e43662691f3b877e.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Arroz Namorado",
+      "description": "Tipo 1 - 5kg",
+      "price": 13.50,
+      "image": "http://d2fvaoynuecth8.cloudfront.net/assets/39518/produtos/134309/desodorantes-axesecopulse.jpg",
+      "buying": 0
+    }
+  ];
 
   $scope.saveInfo = function() {
     var userInfo = {
