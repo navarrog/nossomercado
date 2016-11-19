@@ -31,30 +31,13 @@ nossoMercado.config(function ($routeProvider) {
 nossoMercado.controller('productListController', ['$scope', '$http', '$routeParams', '$location', '$rootScope',
 function($scope, $http, $routeParams, $location, $rootScope) {
 
-  $http.get('json')
-      .success(function (result) {
-        $scope.products = result;
-      })
-      .error(function (data, status) {
-        console.log(data);
-      })
-
-  // $scope.products = [
-  //   {
-  //     "name": "Arroz Yoki",
-  //     "description": "Tipo 1 - 5kg",
-  //     "price": 12.90,
-  //     "image": "http://mercadoemcasa.loja2.com.br/img/f3492826798f2d13e43662691f3b877e.jpg",
-  //     "buying": 0
-  //   },
-  //   {
-  //     "name": "Arroz Namorado",
-  //     "description": "Tipo 1 - 5kg",
-  //     "price": 13.50,
-  //     "image": "http://d2fvaoynuecth8.cloudfront.net/assets/39518/produtos/134309/desodorantes-axesecopulse.jpg",
-  //     "buying": 0
-  //   }
-  // ];
+  // $http.get('json')
+  //     .success(function (result) {
+  //       $scope.products = result;
+  //     })
+  //     .error(function (data, status) {
+  //       console.log(data);
+  //     })
 
   $scope.saveInfo = function() {
     var userInfo = {
@@ -123,6 +106,541 @@ function($scope, $http, $routeParams, $location, $rootScope) {
   $scope.submitOrder = function() {
     sessionStorage.clear();
   };
+
+  $scope.products = [
+    {
+      "name": "Arroz Rosalito",
+      "description": "Tipo 1 - 5kg",
+      "price": 12.90,
+      "image": "/nossomercado/img/produtos/ArrozRosalito.png",
+      "buying": 0
+    },
+    {
+      "name": "Arroz Namorado",
+      "description": "Tipo 1 - 5kg",
+      "price": 13.50,
+      "image": "/nossomercado/img/produtos/ArrozNamorado.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Biscoito Recheado Recheados",
+      "description": "125g",
+      "price": 0.98,
+      "image": "/nossomercado/img/produtos/BiscoitoRecheados.png",
+      "buying": 0
+    },
+    {
+      "name": "Biscoito Recheado Danix",
+      "description": "125g",
+      "price": 1.49,
+      "image": "/nossomercado/img/produtos/BiscoitoDanix.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Café Torrado e Moído Café Brasileiro",
+      "description": "1kg",
+      "price": 7.78,
+      "image": "/nossomercado/img/produtos/CafeBrasileiro.png",
+      "buying": 0
+    },
+    {
+      "name": "Café Torrado e Moído Caboclo",
+      "description": "1kg",
+      "price": 7.98,
+      "image": "/nossomercado/img/produtos/CafeCaboclo.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Farinha de Trigo Sol",
+      "description": "1kg",
+      "price": 2.50,
+      "image": "/nossomercado/img/produtos/FarinhadeTrigoSol.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Farinha de Trigo Boa Sorte",
+      "description": "1kg",
+      "price": 2.00,
+      "image": "/nossomercado/img/produtos/FarinhadeTrigoBoaSorte.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Óleo de Soja Concordia",
+      "description": "900ml",
+      "price": 2.90,
+      "image": "/nossomercado/img/produtos/OleodeSojaConcordia.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Óleo de Soja Soya",
+      "description": "900ml",
+      "price": 2.85,
+      "image": "/nossomercado/img/produtos/OleodeSojaSoya.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Sardinha Coqueiro",
+      "description": "125g",
+      "price": 2.69,
+      "image": "/nossomercado/img/produtos/SardinhaNoOleoCoqueiro.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Sardinha Pescador",
+      "description": "125g",
+      "price": 2.25,
+      "image": "/nossomercado/img/produtos/SardinhaNoOleoPescador.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Farofa Tradicional Yoki",
+      "description": "250g",
+      "price": 3.85,
+      "image": "/nossomercado/img/produtos/FarofaTradicionalYoki.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Sal Refinado Lebre",
+      "description": "1kg",
+      "price": 0.89,
+      "image": "/nossomercado/img/produtos/SalRefinadoLebre.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Sal Refinado Cisne",
+      "description": "1kg",
+      "price": 1.85,
+      "image": "/nossomercado/img/produtos/SalRefinadoCisne.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Molho de Tomate Fugini",
+      "description": "340g",
+      "price": 1.29,
+      "image": "/nossomercado/img/produtos/MolhodeTomateFugini.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Molho de Tomate Salsaretti",
+      "description": "340g",
+      "price": 1.59,
+      "image": "/nossomercado/img/produtos/MolhodeTomateSalsaretti.JPG",
+      "buying": 0
+    },
+    {
+      "name": "Achocolatado em Pó Nescau",
+      "description": "400g",
+      "price": 5.89,
+      "image": "/nossomercado/img/produtos/AchocolatadoNescau.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Achocolatado em Pó Toddy",
+      "description": "400g",
+      "price": 6.09,
+      "image": "/nossomercado/img/produtos/AchocolatadoToddy.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Leite em Pó Italac",
+      "description": "200g",
+      "price": 7.89,
+      "image": "/nossomercado/img/produtos/LeiteItalac200gr.png",
+      "buying": 0
+    },
+    {
+      "name": "Leite em Pó Nutril ",
+      "description": "200g",
+      "price": 7.99,
+      "image": "/nossomercado/img/produtos/LeiteNutril200gr.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Açúcar Refinado Guarani",
+      "description": "1kg",
+      "price": 2.39,
+      "image": "/nossomercado/img/produtos/AcucarRefinadoGuarani.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Açúcar Refinado Caravelas",
+      "description": "1kg",
+      "price": 2.55,
+      "image": "/nossomercado/img/produtos/AcucarRefinadoCaravelas.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Feijão Carioca Camil",
+      "description": "Tipo 1 - 1kg",
+      "price": 8.20,
+      "image": "/nossomercado/img/produtos/FeijaoCariocaCamil.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Feijão Carioca Rosalito",
+      "description": "Tipo 1 - 1kg",
+      "price": 8.90,
+      "image": "/nossomercado/img/produtos/FeijaoCariocaRosalito.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Macarrão com Ovos Espaguete Adria",
+      "description": "500g",
+      "price": 1.99,
+      "image": "/nossomercado/img/produtos/EspagueteAdria.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Macarrão com Ovos Espaguete Petybon",
+      "description": "500g",
+      "price": 1.79,
+      "image": "/nossomercado/img/produtos/EspaguetePetybon.png",
+      "buying": 0
+    },
+    {
+      "name": "Macarrão com Ovos Parafuso Adria",
+      "description": "500g",
+      "price": 1.99,
+      "image": "/nossomercado/img/produtos/ParafusoAdria.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Macarrão com Ovos Parafuso Petybon",
+      "description": "500g",
+      "price": 1.79,
+      "image": "/nossomercado/img/produtos/ParafusoPetybon.png",
+      "buying": 0
+    },
+    {
+      "name": "Goiabada Predilecta",
+      "description": "300g",
+      "price": 1.69,
+      "image": "/nossomercado/img/produtos/GoiabadaPredilecta300gr.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Goiabada Xavante",
+      "description": "300g",
+      "price": 1.40,
+      "image": "/nossomercado/img/produtos/GoiabadaXavante300gr.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Feijão Preto Camil",
+      "description": "1kg",
+      "price": 6.90,
+      "image": "/nossomercado/img/produtos/FeijaoPretoCamil.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Feijão Preto Kicaldo",
+      "description": "1kg",
+      "price": 6.49,
+      "image": "/nossomercado/img/produtos/FeijãoPretoKicaldo.png",
+      "buying": 0
+    },
+    {
+      "name": "Fubá Mimoso Yoki",
+      "description": "500g",
+      "price": 1.45,
+      "image": "/nossomercado/img/produtos/FubaMimosoYoki.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Fubá Mimoso Xodó",
+      "description": "500g",
+      "price": 0.98,
+      "image": "/nossomercado/img/produtos/FubaMimosoXodomilho.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Biscoito Salgado Triunfo",
+      "description": "200g",
+      "price": 1.69,
+      "image": "/nossomercado/img/produtos/BiscoitoAguaeSalTriunfo.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Biscoito Salgado Adria",
+      "description": "200g",
+      "price": 1.30,
+      "image": "/nossomercado/img/produtos/BiscoitoAguaeSalAdria.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Leite Longa Vida Líder",
+      "description": "1L",
+      "price": 2.19,
+      "image": "/nossomercado/img/produtos/LeiteLongaVidaLider.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Leite Longa Vida Piracanjuba",
+      "description": "1L",
+      "price": 2.39,
+      "image": "/nossomercado/img/produtos/LeiteLongaVidaPiracanjuba.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Macarrão Instantâneo Nissin",
+      "description": "80g",
+      "price": 1.15,
+      "image": "/nossomercado/img/produtos/MiojoNissin.png",
+      "buying": 0
+    },
+    {
+      "name": "Macarrão Instantâneo Vigor",
+      "description": "80g",
+      "price": 0.73,
+      "image": "/nossomercado/img/produtos/MiojoVigor.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Suco em Pó MID",
+      "description": "25g",
+      "price": 0.85,
+      "image": "/nossomercado/img/produtos/SucoPoMid.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Suco em Pó Tang",
+      "description": "25g",
+      "price": 0.94,
+      "image": "/nossomercado/img/produtos/SucoPoTang.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Refrigerante Poty",
+      "description": "2L",
+      "price": 3.49,
+      "image": "/nossomercado/img/produtos/RefrigerantePoty.png",
+      "buying": 0
+    },
+    {
+      "name": "Refrigerante Roller",
+      "description": "2L",
+      "price": 3.69,
+      "image": "/nossomercado/img/produtos/RefrigeranteRoller.png",
+      "buying": 0
+    },
+    {
+      "name": "Refrigerante Coca-Cola",
+      "description": "2L",
+      "price": 5.49,
+      "image": "/nossomercado/img/produtos/RefrigeranteCocaCola.png",
+      "buying": 0
+    },
+    {
+      "name": "Água Sanitária Suprema",
+      "description": "1L",
+      "price": 2.15,
+      "image": "/nossomercado/img/produtos/AguaSanitariaSuprema.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Água Sanitária Ypê",
+      "description": "1L",
+      "price": 3.98,
+      "image": "/nossomercado/img/produtos/AguaSanitariaYpe.png",
+      "buying": 0
+    },
+    {
+      "name": "Amaciante de Roupas Baby Soft",
+      "description": "500ml",
+      "price": 4.68,
+      "image": "/nossomercado/img/produtos/AmacianteDeRoupaBabySoft.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Amaciante de Roupas Mon Bijou",
+      "description": "500ml",
+      "price": 4.69,
+      "image": "/nossomercado/img/produtos/AmacianteDeRoupaMonBijou.png",
+      "buying": 0
+    },
+    {
+      "name": "Creme Dental Sorriso",
+      "description": "90g",
+      "price": 2.25,
+      "image": "/nossomercado/img/produtos/CremeDentalSorriso.png",
+      "buying": 0
+    },
+    {
+      "name": "Creme Dental Colgate",
+      "description": "90g",
+      "price": 2.65,
+      "image": "/nossomercado/img/produtos/CremeDentalColgate.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Desinfetante Minuano",
+      "description": "500ml",
+      "price": 1.75,
+      "image": "/nossomercado/img/produtos/DesinfetanteMinuano.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Desinfetante Ypê",
+      "description": "500ml",
+      "price": 1.99,
+      "image": "/nossomercado/img/produtos/DesinfetanteYpe.png",
+      "buying": 0
+    },
+    {
+      "name": "Lã de Aço Lustro",
+      "description": "60g",
+      "price": 0.76,
+      "image": "/nossomercado/img/produtos/LaDeAcoLustro.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Lã de Aço Assolan",
+      "description": "60g",
+      "price": 1.29,
+      "image": "/nossomercado/img/produtos/LaDeAcoAssolan.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Esponja Esfrelux",
+      "description": "-",
+      "price": 2.05,
+      "image": "/nossomercado/img/produtos/EsponjaEsfrelux.gif",
+      "buying": 0
+    },
+    {
+      "name": "Esponja Tinindo",
+      "description": "-",
+      "price": 2.39,
+      "image": "/nossomercado/img/produtos/EsponjaTinindo.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Limpador Multiuso Pratice",
+      "description": "500ml",
+      "price": 1.99,
+      "image": "/nossomercado/img/produtos/LimpadorMultiusoPractice.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Limpador Multiuso Ypê",
+      "description": "500ml",
+      "price": 2.76,
+      "image": "/nossomercado/img/produtos/LimpadorMultiusoYpe.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Papel Higiênico Fofinho",
+      "description": "Pacote com 4 unidades",
+      "price": 3.59,
+      "image": "/nossomercado/img/produtos/PapelHigienicoFofinho.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Papel Higiênico Dualette",
+      "description": "Pacote com 4 unidades",
+      "price": 3.78,
+      "image": "/nossomercado/img/produtos/PapelHigienicoDualette.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Sabão em Pó OMO",
+      "description": "1kg",
+      "price": 7.99,
+      "image": "/nossomercado/img/produtos/SabaoEmPoOmo.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Sabão em Pó Tixan Ypê",
+      "description": "1kg",
+      "price": 5.50,
+      "image": "/nossomercado/img/produtos/SabaoEmPoTixanYpe.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Sabonete Lux",
+      "description": "90g",
+      "price": 1.19,
+      "image": "/nossomercado/img/produtos/SaboneteLux.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Sabonete Palmolive",
+      "description": "90g",
+      "price": 1.15,
+      "image": "/nossomercado/img/produtos/SabonetePalmolive.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Detergente Líquido Minuano",
+      "description": "500ml",
+      "price": 1.39,
+      "image": "/nossomercado/img/produtos/DetergenteMinuano.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Detergente Líquido Ypê",
+      "description": "500ml",
+      "price": 1.39,
+      "image": "/nossomercado/img/produtos/DetergenteYpe.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Sabão em Barra Ypê",
+      "description": "200g",
+      "price": 5.39,
+      "image": "/nossomercado/img/produtos/SabaoEmBarraYpe.png",
+      "buying": 0
+    },
+    {
+      "name": "Sabão em Barra Minuano",
+      "description": "200g",
+      "price": 5.12,
+      "image": "/nossomercado/img/produtos/SabaoEmbarraMinuano.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Shampoo Seda",
+      "description": "350ml",
+      "price": 5.49,
+      "image": "/nossomercado/img/produtos/ShampooSeda.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Shampoo Pantene",
+      "description": "350ml",
+      "price": 12.50,
+      "image": "/nossomercado/img/produtos/ShampooPantene.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Desodorante Rexona Bamboo",
+      "description": "-",
+      "price": 11.98,
+      "image": "/nossomercado/img/produtos/DesodoranteRexonaBamboo.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Desodorante Nivea Invisible",
+      "description": "-",
+      "price": 8.9,
+      "image": "/nossomercado/img/produtos/RexonaInvisible.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Absorvente Intimus",
+      "description": "-",
+      "price": 2.28,
+      "image": "/nossomercado/img/produtos/AbsorventeIntimus.jpg",
+      "buying": 0
+    },
+    {
+      "name": "Absorvente Sempre Livre",
+      "description": "-",
+      "price": 2.15,
+      "image": "/nossomercado/img/produtos/AbsorventeSempreLivre.jpg",
+      "buying": 0
+    }
+  ];
 
 }]);
 
